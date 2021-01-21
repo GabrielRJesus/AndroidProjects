@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TextFields</string>
+    <string name="hint_email">Seu e-mail...</string>
+    <string name="hint_password">Sua senha...</string>
+</resources>
