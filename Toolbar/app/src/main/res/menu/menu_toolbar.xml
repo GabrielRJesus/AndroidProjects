@@ -4,11 +4,13 @@
 
     <item android:title="@string/menu_search"
     android:id="@+id/searchMenu"
-        app:showAsAction="always"/>
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_search_white_24"/>
 
     <item android:title="@string/menu_cart"
         android:id="@+id/cartMenu"
-        app:showAsAction="always"/>
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_shopping_cart_white_24"/>
 
     <item android:title="@string/menu_config"
         android:id="@+id/configMenu"/>
