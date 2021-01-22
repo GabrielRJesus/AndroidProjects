@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/menu_search"
+    android:id="@+id/searchMenu"
+        app:showAsAction="always"/>
+
+    <item android:title="@string/menu_cart"
+        android:id="@+id/cartMenu"
+        app:showAsAction="always"/>
+
+    <item android:title="@string/menu_config"
+        android:id="@+id/configMenu"/>
+
+    <item android:title="@string/menu_about"
+        android:id="@+id/aboutMenu"/>
+
+</menu>
