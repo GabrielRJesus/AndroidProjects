@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Buttons</string>
     <string name="btn_elevado">BOTÃO ELEVADO</string>
+    <string name="btn_flat">FLAT BUTTON</string>
 </resources>

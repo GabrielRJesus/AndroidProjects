@@ -12,4 +12,8 @@
         <item name="android:textColor">@color/colorAccent</item>
     </style>
 
+    <style name="FlatButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
 </resources>
