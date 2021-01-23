@@ -2,4 +2,7 @@
     <string name="app_name">SelectionControls</string>
     <string name="switch_onoff">Ligua/Desliga</string>
     <string name="cb_ice_cream">Gosto de sorvete</string>
+    <string name="rb_op1">Opção 1</string>
+    <string name="rb_op2">Opção 2</string>
+    <string name="rb_op3">Opção 3</string>
 </resources>

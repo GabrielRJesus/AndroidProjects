@@ -23,4 +23,34 @@
         android:text="@string/cb_ice_cream"
         android:checked="true"/>
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/option1"
+            android:text="@string/rb_op1"
+            android:layout_marginLeft="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/option2"
+            android:text="@string/rb_op2"
+            android:layout_marginLeft="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/option3"
+            android:text="@string/rb_op3"
+            android:layout_marginLeft="16dp"/>
+
+    </RadioGroup>
+
+
+
 </LinearLayout>
