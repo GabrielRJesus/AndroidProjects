@@ -23,7 +23,13 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar snackbar = Snackbar.make(relativeLayout, "ITEM EXCLUIDO",Snackbar.LENGTH_LONG);
+                final Snackbar snackbar = Snackbar.make(view, "ITEM EXCLUIDO",Snackbar.LENGTH_LONG);
+                snackbar.setAction("FECHAR", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        snackbar.dismiss();
+                    }
+                });
                 snackbar.show();
             }
         });
