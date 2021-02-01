@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -30,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
                         snackbar.dismiss();
                     }
                 });
+
+                View snackView = snackbar.getView();
+                snackView.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark, null));
+
+                TextView snackActionView = snackView.findViewById(com.google.android.material.R.id.snackbar_action);
+                snackActionView.setTextColor(getResources().getColor(android.R.color.white, null));
+
                 snackbar.show();
             }
         });
