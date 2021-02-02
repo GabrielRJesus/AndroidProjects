@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 public class MainActivity extends AppCompatActivity {
 
     private ProgressBar circularBar;
+    private ProgressBar linearBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
 
         circularBar = findViewById(R.id.circularBar);
         circularBar.setVisibility(View.GONE);
+
+        linearBar = findViewById(R.id.linearBar);
+        linearBar.setProgress(0);
+        linearBar.setSecondaryProgress(0);
+        linearBar.setMax(100);
+
         new AsyncCircular().execute();
     }
 
@@ -32,12 +39,19 @@ public class MainActivity extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
             for(int i=0; i<100; i++){
                 try {
+                    publishProgress(i);
                     Thread.sleep(300);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
             return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            linearBar.setProgress(values[0]);
+            linearBar.setSecondaryProgress(values[0] + 15);
         }
 
         @Override
