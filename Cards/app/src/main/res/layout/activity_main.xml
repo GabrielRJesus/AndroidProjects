@@ -64,6 +64,27 @@
                 android:layout_height="match_parent"
                 android:text="Estamos modelando um belo CardView para nosso projeto de app Android"
                 android:padding="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Botão 1"
+                    style="@style/Widget.AppCompat.Button.Borderless" />
+
+                <Button
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Botão 2"
+                    style="@style/Widget.AppCompat.Button.Borderless" />
+                
+            </LinearLayout>
             
         </LinearLayout>
 
